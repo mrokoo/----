@@ -1,10 +1,10 @@
 from operator import ne
+
 import scipy.io as scio
 from tensorflow.core.protobuf.config_pb2 import OptimizerOptions
-from tensorflow.keras import models
-from tensorflow.keras import layers, optimizers
+from tensorflow.keras import layers, models, optimizers
 from tensorflow.keras.utils import to_categorical
- 
+
 path = 'data_batch_1.mat'
 data = scio.loadmat(path)
 data_train = data['data']
